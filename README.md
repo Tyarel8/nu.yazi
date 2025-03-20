@@ -63,4 +63,4 @@ desc = "Move files to minecraft schematics"
 ```
 
 > [!NOTE]  
-> This plugin loades your nushell configuration, so some commands shown in the examples are not available in nushell by default.
+> This plugin loads your nushell configuration, so some commands shown in the examples are not available in nushell by default.

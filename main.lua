@@ -42,8 +42,6 @@ return {
         if #args == 0 then return end
         local command = table.concat(args, " ")
 
-        -- ya.notify { title = "input", content = input, timeout = 3.0 }
-
         -- Prepend the created variables to the command so that they are available
         local full_cmd = [[
     alias ! = ya emit
