@@ -54,6 +54,11 @@ return {
     let $hover = $env.yazi_hover
 ]] .. command
 
+        local permit = nil
+        if args.hide then
+            permit = ya.hide()
+        end
+
         -- ya.notify { title = "YAZI_ID", content = ya.id("app").value, timeout = 5.0 }
         -- ya.notify { title = "cmd", content = full_cmd, timeout = 5.0 }
         local output, err = Command("nu")
@@ -68,6 +73,9 @@ return {
             :stderr(Command.PIPED)
             :output()
 
+        if permit then
+            permit:drop()
+        end
         -- ya.notify { title = "out", content = output.stdout, timeout = 3.0 }
         if not output.status.success and output.stderr ~= "" then
             ya.notify { title = "err", content = output.stderr, timeout = 5.0 }
