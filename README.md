@@ -20,7 +20,7 @@ For the plugin itself, it takes the argument `--hide` that will hide the yazi wi
 ## Installation
 
 ```sh
-ya pack -a 'Tyarel8/nu'
+ya pkg add 'Tyarel8/nu'
 ```
 
 ## Examples
