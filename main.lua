@@ -60,7 +60,7 @@ return {
         -- ya.notify { title = "cmd", content = full_cmd, timeout = 5.0 }
         local output, err = Command("nu")
             -- Call command with --login so that custom config is loaded
-            :args({ "-l", "-c", full_cmd })
+            :arg { "-l", "-c", full_cmd }
             -- Pass files as env variables
             :env("yazi_all", table.concat(get_paths(), ";"):gsub("\\", "/"))
             :env("yazi_hover", get_hover():gsub("\\", "/"))
