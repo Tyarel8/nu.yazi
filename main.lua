@@ -45,7 +45,7 @@ return {
         -- Prepend the created variables to the command so that they are available
         local full_cmd = [[
     alias ! = ya emit
-    def dbg [msg] { print -e $msg ; exit 1 }
+    def dbg [msg?] { print -e ($in | default $msg) ; exit 1 }
 
     let $all = $env.yazi_all | split row ';'
     let $select = $env.yazi_select | split row ';'
