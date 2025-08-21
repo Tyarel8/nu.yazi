@@ -5,7 +5,7 @@ A plugin for [yazi](https://github.com/sxyazi/yazi) to execute nu code.
 ## Usage
 
 Inside the nushell code there are some variables and definitions available:
-- `$all`: array that containst either the hovered file or the selected files (equivalent to `$@`/`%*`).
+- `$all`: array that contains either the hovered file or the selected files (equivalent to `$@`/`%*`).
 - `$hover`: string that contains the hovered file (empty string if there is no hovered file) (equivalent to `$0`/`%0`).
 - `$select`: array that contains the selected files.
 
