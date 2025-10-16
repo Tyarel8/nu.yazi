@@ -53,7 +53,7 @@ return {
 ]] .. command
 
         if args.hide then
-            ya.hide()
+            local _permit = ui.hide()
         end
 
         -- ya.notify { title = "YAZI_ID", content = ya.id("app").value, timeout = 5.0 }
